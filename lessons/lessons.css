@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+select{
+    background-color: var(--background-color-select);
+    letter-spacing: var(--letter-spacing);
+    font-size: var(--font-weight);
+    color: var(--font-color);
+    border-radius: var(--border-radius);
+    border: var(--border-color-width);
+    transition: var(--border-color-width);
+}
