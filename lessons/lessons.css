@@ -51,6 +51,16 @@ label>input{
 }
 
 
+/*select buttons*/
+
+.keuze-selecteren{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    margin: 1em;
+}
+
 
 /*EINDE LESSONS*/
 
