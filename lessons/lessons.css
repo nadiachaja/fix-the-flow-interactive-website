@@ -4,6 +4,10 @@ body{
 }
 
 /*START LESSONS*/
+
+
+
+
 select{
     background-color: var(--background-color-select);
     letter-spacing: var(--letter-spacing);
@@ -14,10 +18,18 @@ select{
     transition: var(--border-color-width);
 }
 
+.h1{
+    font-family: var(--font-poppins);
+    display: flex;
+  
+
+}
 
 
 
 /*EINDE LESSONS*/
+
+
 
 /*BUTTON MENU*/
 
