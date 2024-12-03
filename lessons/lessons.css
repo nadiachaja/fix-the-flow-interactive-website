@@ -5,7 +5,9 @@ body{
 
 /*START LESSONS*/
 
-
+main{
+    background-color: var(--lessons-color);
+}
 
 
 select{
@@ -18,11 +20,14 @@ select{
     transition: var(--border-color-width);
 }
 
+article{
+    display: flex;
+    justify-self: center;
+}
+
+
 .h1{
     font-family: var(--font-poppins);
-    display: flex;
-  
-
 }
 
 
