@@ -14,7 +14,7 @@ main{
 select{
     background-color: var(--background-color-select);
     letter-spacing: var(--letter-spacing);
-    font-size: var(--font-weight);
+    /* font-size: var(--font-weight); */
     color: var(--font-color);
     border-radius: var(--border-radius);
     border: var(--border-color-width);
