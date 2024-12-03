@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 
-
+/*START LESSONS*/
 select{
     background-color: var(--background-color-select);
     letter-spacing: var(--letter-spacing);
@@ -13,3 +13,39 @@ select{
     border: var(--border-color-width);
     transition: var(--border-color-width);
 }
+
+
+
+
+/*EINDE LESSONS*/
+
+/*BUTTON MENU*/
+
+.button-menu {
+    background-color: var(--general-color);
+    border-radius: var(--border-radius-button);
+    width: 5em;
+    height: 5em;
+    border: var(--border-button);
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--button-text-color);
+}
+
+button:hover {
+    background: var(--background-gradient-all-buttons);
+}
+
+/*svg (kruisje) als het menu open is*/
+#menuIcon {
+    width: 45px;
+    height: 45px;
+    fill: var(--button-text-color);
+}
+
+/*EINDE BUTTON*/
