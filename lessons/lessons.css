@@ -62,42 +62,15 @@ select{
     margin: 1em;
 }
 
+/*om de filter te laten werken*/
 .hidden{
     display: none;
 }
 
-/* 
-.story-1{
+.story-card{
     background-color: var(--wolkje-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: var(--border-radius-button);
 }
-
-.titel-story{
-    grid-column: 2;
-}
-
-.photo-story{
-    grid-column: auto;
-}
-
-button.play{
-    grid-column: 2;
-    grid-row: 3;
-    justify-self: start;
-    align-self: center;
-    border-radius: 50%;
-    border: none;
-    width: 2.5em;
-    height: 2.5em;
-}
-
-.svg.play-icon{
-    display: flex;
-    justify-content: center;
-    margin-left: .1em;
-} */
 
 
 /*EINDE LESSONS*/
@@ -106,7 +79,7 @@ button.play{
 
 /*BUTTON MENU*/
 
-.button-menu {
+.button-menu #menuToggle {
     background-color: var(--general-color);
     border-radius: var(--border-radius-button);
     width: 5em;
