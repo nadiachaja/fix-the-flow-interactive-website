@@ -98,10 +98,19 @@ gebruiker.addEventListener('mouseleave', () => {
 
 
 // select button dat je kan filteren naar een story
-const filterSelect = document.querySelector('select')
+const filterSelect = document.querySelector('select') //dit selecteer het eerste select in de DOM
 
-filterSelect.addEventListener('change',filterAnimals);
+filterSelect.addEventListener('change',filterAnimals); //select element luister naar veranderingen en voor de fuctie uit
 
-function filterAnimals(){
-    const animal = document.querySelectorAll('option')
+function filterAnimals(){ //dit is de fuctie 
+    const animals = document.querySelectorAll('.story-card'); //dit selecteert alle stories
+    const filter = filterSelect.value; //dit verkrijgt de value van de options
+
+    animals.forEach(animal => { //loopt door alle animals heen
+        if (filter ==='*' || animal.classList.contains(filter)){ //controleert of alles geslecteerd is of een andere specifieke filter
+            animal.classList.remove('hidden'); //zoja, dan verwijdert die de hidden class om zo de geselecteerde stories te laten zien
+        } else {
+            animal.classList.add('hidden'); // zo niet, dat blijft de hidden erop en laat de niet geselecteerde stories niet zien
+        }
+    })
 }
