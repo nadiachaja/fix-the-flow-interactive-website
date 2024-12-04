@@ -79,7 +79,23 @@ select{
 
 /*BUTTON MENU*/
 
-.button-menu #menuToggle {
+/* .button-menu #menuToggle {
+    background-color: var(--general-color);
+    border-radius: var(--border-radius-button);
+    width: 5em;
+    height: 5em;
+    border: var(--border-button);
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--button-text-color);
+} */
+
+button#menuToggle{
     background-color: var(--general-color);
     border-radius: var(--border-radius-button);
     width: 5em;
