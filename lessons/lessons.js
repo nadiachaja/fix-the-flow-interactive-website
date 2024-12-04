@@ -95,3 +95,13 @@ gebruiker.addEventListener('mouseenter', () => {
 gebruiker.addEventListener('mouseleave', () => {
     gebruiker.classList.remove('wobble');
 });
+
+
+// select button dat je kan filteren naar een story
+const filterSelect = document.querySelector('select')
+
+filterSelect.addEventListener('change',filterAnimals);
+
+function filterAnimals(){
+    const animal = document.querySelectorAll('option')
+}

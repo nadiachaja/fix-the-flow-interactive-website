@@ -10,20 +10,11 @@ main{
   
 }
 
-
-select{
-    background-color: var(--background-color-select);
-    letter-spacing: var(--letter-spacing);
-    /* font-size: var(--font-weight); */
-    color: var(--font-color);
-    border-radius: var(--border-radius);
-    border: var(--border-color-width);
-    transition: var(--border-color-width);
-}
-
+/*plaatsing van de h1*/
 article{
     display: flex;
     justify-self: center;
+    color: var(--general-color);
 }
 
 
@@ -31,8 +22,9 @@ article{
     font-family: var(--font-poppins);
 }
 
-/*zoekbalk*/
 
+
+/*zoekbalk*/
 label>input{
     display: flex;
     justify-self: center;
@@ -50,9 +42,18 @@ label>input{
     padding-left: 2em;
 }
 
+/*select button*/
+select{
+    background-color: var(--background-color-select);
+    letter-spacing: var(--letter-spacing);
+    /* font-size: var(--font-weight); */
+    color: var(--font-color);
+    border-radius: var(--border-radius);
+    border: var(--border-color-width);
+    transition: var(--border-color-width);
+}
 
 /*select buttons*/
-
 .keuze-selecteren{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -60,6 +61,43 @@ label>input{
     gap: 1em;
     margin: 1em;
 }
+
+.hidden{
+    display: none;
+}
+
+/* 
+.story-1{
+    background-color: var(--wolkje-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.titel-story{
+    grid-column: 2;
+}
+
+.photo-story{
+    grid-column: auto;
+}
+
+button.play{
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: start;
+    align-self: center;
+    border-radius: 50%;
+    border: none;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.svg.play-icon{
+    display: flex;
+    justify-content: center;
+    margin-left: .1em;
+} */
 
 
 /*EINDE LESSONS*/
