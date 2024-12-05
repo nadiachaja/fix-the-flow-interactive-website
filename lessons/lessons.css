@@ -70,6 +70,7 @@ select{
 .story-card{
     background-color: var(--wolkje-color);
     border-radius: var(--border-radius-button);
+    margin: 1em;
 }
 
 
