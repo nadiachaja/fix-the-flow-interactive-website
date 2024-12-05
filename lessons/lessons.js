@@ -99,15 +99,18 @@ gebruiker.addEventListener('mouseleave', () => {
 
 // 1
 // select button dat je kan filteren naar een story
-const filterSelect = document.querySelector('select') //dit selecteer het eerste select in de DOM
+const filterSelect = document.querySelectorAll('select') //dit selecteer het alle selects in de DOM
+filterSelect.forEach(function changeCards(filter) {
+    filter.addEventListener('change', function(element){
+        filterAnimals(element.target.value)
+    }); //select element luister naar veranderingen en voor de fuctie uit
+})
 
-filterSelect.addEventListener('change',filterAnimals); //select element luister naar veranderingen en voor de fuctie uit
 
-function filterAnimals(){ //dit is de fuctie 
+function filterAnimals(filter){ //dit is de fuctie 
     const animals = document.querySelectorAll('.story-card'); //dit selecteert alle stories
-    const filter = filterSelect.value; //dit verkrijgt de value van de options
-
     animals.forEach(animal => { //loopt door alle animals heen
+        
         if (filter ==='*' || animal.classList.contains(filter)){ //controleert of alles geslecteerd is of een andere specifieke filter
             animal.classList.remove('hidden'); //zoja, dan verwijdert die de hidden class om zo de geselecteerde stories te laten zien
         } else {
@@ -119,19 +122,13 @@ function filterAnimals(){ //dit is de fuctie
 
 
 
-const filterSelect2 = document.querySelector('select') //dit selecteer het eerste select in de DOM
 
-filterSelect2.addEventListener('change',filterLanguages); //select element luister naar veranderingen en voor de fuctie uit
 
-function filterLanguages(){ //dit is de fuctie 
-    const languages = document.querySelectorAll('.story-card'); //dit selecteert alle stories
-    const filter = filterSelect2.value; //dit verkrijgt de value van de options
 
-    language.forEach(language => { //loopt door alle animals heen
-        if (filter ==='*' ||language.classList.contains(filter)){ //controleert of alles geslecteerd is of een andere specifieke filter
-            language.classList.remove('hidden'); //zoja, dan verwijdert die de hidden class om zo de geselecteerde stories te laten zien
-        } else {
-            language.classList.add('hidden'); // zo niet, dat blijft de hidden erop en laat de niet geselecteerde stories niet zien
-        }
-    })
-}
+
+
+
+
+
+
+
