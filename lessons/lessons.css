@@ -23,7 +23,6 @@ article{
 }
 
 
-
 /*zoekbalk*/
 label>input{
     display: flex;
@@ -53,6 +52,10 @@ select{
     transition: var(--border-color-width);
 }
 
+select:hover{
+    background: var(--background-gradient-all-buttons);
+}
+
 /*select buttons*/
 .keuze-selecteren{
     display: grid;
@@ -67,6 +70,7 @@ select{
     display: none;
 }
 
+/*de stories*/
 .story-card{
     background-color: var(--wolkje-color);
     border-radius: var(--border-radius-button);
