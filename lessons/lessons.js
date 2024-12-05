@@ -97,7 +97,8 @@ gebruiker.addEventListener('mouseleave', () => {
 });
 
 
-// 1
+
+
 // select button dat je kan filteren naar een story
 const filterSelect = document.querySelectorAll('select') //dit selecteer het alle selects in de DOM
 filterSelect.forEach(function changeCards(filter) { //kijkt door alle select heen 

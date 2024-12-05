@@ -35,7 +35,6 @@ label>input{
 
 #search{
     height: 2.5em;
-    /* width: 30em; */
     appearance:none;
     width: 80%;
     padding-left: 2em;
@@ -54,6 +53,10 @@ select{
 
 select:hover{
     background: var(--background-gradient-all-buttons);
+}
+
+input::placeholder{
+    color: var(--general-color);
 }
 
 /*select buttons*/
