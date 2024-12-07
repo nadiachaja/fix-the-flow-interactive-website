@@ -1,47 +1,87 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
 /*START LESSONS*/
 
-main{
+main {
     background-color: var(--lessons-color);
-  
+
 }
 
 /*plaatsing van de h1*/
-article{
+article {
     display: flex;
     justify-self: center;
     color: var(--general-color);
 }
 
+.div{
+    padding-bottom: .5em;
+}
 
-.h1{
+
+.h1 {
     font-family: var(--font-poppins);
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+h3 {
+    font-family: var(--font-poppins);
+    font-size: 14px;
+    grid-column: span 2;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.minuten-story {
+    grid-row: 3;
+    grid-column: 3;
+    align-self: center;
+    margin: 0;
+    font-size: 12px;
+}
+
+.story-uitleg {
+    grid-row: 2;
+    grid-column: span 2;
+    padding: .2em;
+    align-self: center;
+    font-size: 12px;
+}
+
+.filter-uitleg {
+    margin: 1em;
+    padding: .5em;
+    text-align: center;
 }
 
 
 /*zoekbalk*/
-label>input{
+label>input {
     display: flex;
     justify-self: center;
     background-size: 1em;
-    background-position:.5em;
-    background-repeat:no-repeat;
+    background-position: .5em;
+    background-repeat: no-repeat;
     background-image: url(../svg/magnifying-glass-svgrepo-com.svg);
 }
 
-#search{
+#search {
     height: 2.5em;
-    appearance:none;
+    appearance: none;
     width: 80%;
     padding-left: 2em;
 }
 
 /*select button*/
-select{
+select {
     background-color: var(--background-color-select);
     letter-spacing: var(--letter-spacing);
     /* font-size: var(--font-weight); */
@@ -49,18 +89,19 @@ select{
     border-radius: var(--border-radius);
     border: var(--border-color-width);
     transition: var(--border-color-width);
+    cursor: pointer;
 }
 
-select:hover{
+select:hover {
     background: var(--background-gradient-all-buttons);
 }
 
-input::placeholder{
+input::placeholder {
     color: var(--general-color);
 }
 
 /*select buttons*/
-.keuze-selecteren{
+.keuze-selecteren {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -69,15 +110,58 @@ input::placeholder{
 }
 
 /*om de filter te laten werken*/
-.hidden{
+.hidden {
     display: none;
 }
 
 /*de stories*/
-.story-card{
+.story-card {
     background-color: var(--wolkje-color);
     border-radius: var(--border-radius-button);
     margin: 1em;
+    display: grid;
+    grid-template-columns: 25vw 40vw 27vw;
+    grid-template-rows: 10vw 25vw 10vw;
+}
+
+.photo-story {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.vlag {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    margin-right: 1.5em;
+    margin-top: 1.5em;
+}
+
+.play {
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    border: none;
+    justify-self: end;
+    align-self: center;
+    margin-right: .7em;
+    cursor: pointer;
+    background-color: var(--general-color);
+}
+
+.play-icon {
+    margin-top: .35em;
+}
+
+.downloaden {
+    grid-row: 3;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
 }
 
 
@@ -101,6 +185,7 @@ input::placeholder{
     align-items: center;
     justify-content: center;
     fill: var(--button-text-color);
+    cursor: pointer;
 }
 
 button:hover {

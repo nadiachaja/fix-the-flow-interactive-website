@@ -213,6 +213,7 @@ button {
     align-items: center;
     justify-content: center;
     fill: var(--button-text-color);
+    cursor: pointer;
 }
 
 button:hover {
