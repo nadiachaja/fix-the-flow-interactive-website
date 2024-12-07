@@ -200,3 +200,19 @@ button:hover {
 }
 
 /*EINDE BUTTON*/
+
+
+
+
+/*TABLET*/ /*LAPTOP*/
+
+@media screen and (min-width: 700px) {
+
+    .keuze-selecteren{
+        display: flex;
+        /* justify-content: space-around; */
+        justify-content: center;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
