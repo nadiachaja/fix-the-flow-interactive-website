@@ -107,7 +107,11 @@ input::placeholder {
 
 /*om de filter te laten werken*/
 .hidden {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    top: -9999px; /* Verplaats het element buiten het zichtbare gebied */
+    left: -9999px; /* Verplaats het ook naar de zijkant */
+    visibility: hidden; /* Verberg het element */
 }
 
 /*de stories*/
