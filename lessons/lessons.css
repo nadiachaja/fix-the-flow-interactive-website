@@ -20,11 +20,15 @@ article {
 
 .h1 {
     font-family: var(--font-poppins);
+    color: var(--general-color);
 }
 
 h2 {
     display: flex;
     justify-content: center;
+    color: var(--general-color);
+    margin: 0;
+    margin-top: 2em;
 }
 
 
@@ -34,6 +38,7 @@ h3 {
     grid-column: span 2;
     margin-top: 1em;
     margin-left: 1em;
+    color: var(--general-color);
 }
 
 .minuten-story {
@@ -42,6 +47,7 @@ h3 {
     align-self: center;
     margin: 0;
     font-size: 12px;
+    color: var(--general-color);
 }
 
 .story-uitleg {
@@ -50,12 +56,14 @@ h3 {
     padding: .2em;
     align-self: center;
     font-size: 12px;
+    color: var(--general-color);
 }
 
 .filter-uitleg {
     margin: 1em;
     padding: .5em;
     text-align: center;
+    color: var(--general-color);
 }
 
 
@@ -228,6 +236,19 @@ button:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .filter-uitleg {
+        margin: 2em;
+        padding: .5em;
+    }
+
+    h2 {
+        margin-top: 2.5em;
+    }
+
+    #search {
+        width: 60%;
+    }
 }
 
 
@@ -235,5 +256,17 @@ button:hover {
     .all-stories{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .story-uitleg {
+        font-size: 14px;
+    }
+
+    .minuten-story {
+        font-size: 14px;
     }
 }
