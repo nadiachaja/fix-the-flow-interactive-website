@@ -164,6 +164,14 @@ input::placeholder {
     align-self: center;
 }
 
+.story-play{
+    grid-column: span 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: end;
+    margin: 1em;
+}
+
 
 /*EINDE LESSONS*/
 
@@ -206,7 +214,7 @@ button:hover {
 
 /*TABLET*/ /*LAPTOP*/
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 
     .keuze-selecteren{
         display: flex;
