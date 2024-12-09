@@ -120,8 +120,8 @@ input::placeholder {
     border-radius: var(--border-radius-button);
     margin: 1em;
     display: grid;
-    grid-template-columns: 25vw 40vw 27vw;
-    grid-template-rows: 10vw 25vw 10vw;
+    grid-template-columns: 25% 45% 30%;
+    grid-template-rows: 20% 60% 20%;
 }
 
 .photo-story {
