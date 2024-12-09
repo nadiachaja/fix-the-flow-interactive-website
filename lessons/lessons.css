@@ -135,8 +135,8 @@ input::placeholder {
     grid-column: 3;
     grid-row: 1;
     justify-self: end;
-    margin-right: 1.5em;
-    margin-top: 1.5em;
+    margin-right: 1em;
+    margin-top: 1em;
 }
 
 .play {
@@ -206,7 +206,7 @@ button:hover {
 
 /*TABLET*/ /*LAPTOP*/
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
 
     .keuze-selecteren{
         display: flex;
@@ -214,5 +214,18 @@ button:hover {
         justify-content: center;
         margin-left: 2em;
         margin-right: 2em;
+    }
+
+    .all-stories{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    .all-stories{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
