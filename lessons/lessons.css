@@ -17,10 +17,6 @@ article {
     color: var(--general-color);
 }
 
-div{
-    padding-bottom: .5em;
-}
-
 
 .h1 {
     font-family: var(--font-poppins);
