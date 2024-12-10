@@ -41,6 +41,10 @@ h3 {
     color: var(--general-color);
 }
 
+.all-stories{
+    padding-bottom: .2em;
+}
+
 .minuten-story {
     grid-row: 3;
     grid-column: 3;
