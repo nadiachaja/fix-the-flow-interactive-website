@@ -70,6 +70,15 @@ h3 {
     color: var(--general-color);
 }
 
+#filter-result{
+    display: flex;
+    justify-self: center;
+    color: var(--general-color);
+    margin: 0;
+    margin-top: 2em;
+    font-size: var(--body-text-paragraph);
+    margin-bottom: .5em;
+}
 
 /*zoekbalk*/
 label>input {
