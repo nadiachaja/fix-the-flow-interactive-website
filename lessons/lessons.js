@@ -125,8 +125,7 @@ function filterAnimals(filter) {
     const resultText = document.getElementById('filter-result'); // dit selecteert de filter-select 
     if (resultText) {
         resultText.textContent = `${visibleCount} stories gevonden`; // Toon het aantal zichtbaar items
-
-        
+    
     }
 }
 
