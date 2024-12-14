@@ -108,9 +108,11 @@ filterSelect.forEach(function changeCards(filter) { //kijkt door alle select hee
     });
 });
 
+
 function filterAnimals(filter) {
     const animals = document.querySelectorAll('.story-card'); // Selecteer alle stories
     let visibleCount = 0; // Teller voor het aantal zichtbare items
+
 
     animals.forEach(animal => { // Loopt door alle story-cards heen
         if (filter === '*' || animal.classList.contains(filter)) { //als de filter hetzelfde is als * voert die geen filter uit en laat die alle stories zien. Als er wel een story is met class die geselecteert is laat die alleen de geselcteerde zien
@@ -131,6 +133,50 @@ function filterAnimals(filter) {
 
 
 
+
+
+// Selecteer alle 'select' elementen
+// const filterSelect = Array.from(document.querySelectorAll('select'));
+
+// // Voeg event listener toe voor elk select-element
+// filterSelect.forEach(function(filter) {
+//     filter.addEventListener('change', function() {
+//         filterAnimals(); // Roep de filter functie aan wanneer een selectie verandert
+//     });
+// });
+
+// // Filter functie
+// function filterAnimals() {
+//     const animals = document.querySelectorAll('.story-card'); // Selecteer alle story-cards
+//     let visibleCount = 0; // Teller voor het aantal zichtbare items
+
+//     // Verzamel alle geselecteerde filters
+//     const selectedFilters = filterSelect.map(function(select) {
+//         return select.value; // Verkrijg de waarde van elk geselecteerd filter
+//     }).filter(function(value) {
+//         return value !== '*'; // Verwijder de '*' waarde (dit betekent geen filter)
+//     });
+
+//     animals.forEach(animal => {
+//         // Controleer of de story-card voldoet aan alle geselecteerde filters
+//         let matches = selectedFilters.every(function(filter) {
+//             return animal.classList.contains(filter); // Controleer of de story-card de geselecteerde filters bevat
+//         });
+
+//         if (matches) {
+//             animal.classList.remove('hidden'); // Laat de story-card zien
+//             visibleCount++; // Verhoog de teller
+//         } else {
+//             animal.classList.add('hidden'); // Verberg de story-card
+//         }
+//     });
+
+//     // Toon het aantal zichtbare items
+//     const resultText = document.getElementById('filter-result');
+//     if (resultText) {
+//         resultText.textContent = `${visibleCount} stories gevonden`;
+//     }
+// }
 
 
 

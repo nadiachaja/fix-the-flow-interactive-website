@@ -145,6 +145,7 @@ input::placeholder {
     grid-template-rows: 20% 60% 20%;
 }
 
+
 .photo-story {
     grid-row: 2;
     grid-column: 1;
