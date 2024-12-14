@@ -99,43 +99,43 @@ gebruiker.addEventListener('mouseleave', () => {
 
 
 
-// select button dat je kan filteren naar een story
-const filterSelect = document.querySelectorAll('select'); //dit selecteer het alle selects in de DOM
+// // select button dat je kan filteren naar een story
+// const filterSelect = document.querySelectorAll('select'); //dit selecteer het alle selects in de DOM
 
-filterSelect.forEach(function changeCards(filter) { //kijkt door alle select heen 
-    filter.addEventListener('change', function(element) { //select element luister naar veranderingen en voor de fuctie uit
-        filterAnimals(element.target.value); //worden de waarde van de geselecteerde select opgehaald 
-    });
-});
-
-
-function filterAnimals(filter) {
-    const animals = document.querySelectorAll('.story-card'); // Selecteer alle stories
-    let visibleCount = 0; // Teller voor het aantal zichtbare items
+// filterSelect.forEach(function changeCards(filter) { //kijkt door alle select heen 
+//     filter.addEventListener('change', function(element) { //select element luister naar veranderingen en voor de fuctie uit
+//         filterAnimals(element.target.value); //worden de waarde van de geselecteerde select opgehaald 
+//     });
+// });
 
 
-    animals.forEach(animal => { // Loopt door alle story-cards heen
-        if (filter === '*' || animal.classList.contains(filter)) { //als de filter hetzelfde is als * voert die geen filter uit en laat die alle stories zien. Als er wel een story is met class die geselecteert is laat die alleen de geselcteerde zien
-            animal.classList.remove('hidden'); //zoja, dan verwijdert die de hidden class om zo de geselecteerde stories te laten zien
-            visibleCount++; // Verhoog de teller als het item zichtbaar is
-        } else {
-            animal.classList.add('hidden'); // zo niet, dat blijft de hidden erop en laat de niet geselecteerde stories niet zien
-        }
-    });
+// function filterAnimals(filter) {
+//     const animals = document.querySelectorAll('.story-card'); // Selecteer alle stories
+//     let visibleCount = 0; // Teller voor het aantal zichtbare items
 
-    // Toon het aantal gefilterde items
-    const resultText = document.getElementById('filter-result'); // dit selecteert de filter-select 
-    if (resultText) {
-        resultText.textContent = `${visibleCount} stories gevonden`; // Toon het aantal zichtbaar items
+
+//     animals.forEach(animal => { // Loopt door alle story-cards heen
+//         if (filter === '*' || animal.classList.contains(filter)) { //als de filter hetzelfde is als * voert die geen filter uit en laat die alle stories zien. Als er wel een story is met class die geselecteert is laat die alleen de geselcteerde zien
+//             animal.classList.remove('hidden'); //zoja, dan verwijdert die de hidden class om zo de geselecteerde stories te laten zien
+//             visibleCount++; // Verhoog de teller als het item zichtbaar is
+//         } else {
+//             animal.classList.add('hidden'); // zo niet, dat blijft de hidden erop en laat de niet geselecteerde stories niet zien
+//         }
+//     });
+
+//     // Toon het aantal gefilterde items
+//     const resultText = document.getElementById('filter-result'); // dit selecteert de filter-select 
+//     if (resultText) {
+//         resultText.textContent = `${visibleCount} stories gevonden`; // Toon het aantal zichtbaar items
     
-    }
-}
+//     }
+// }
 
 
 
 
 
-// Selecteer alle 'select' elementen
+// // Selecteer alle 'select' elementen
 // const filterSelect = Array.from(document.querySelectorAll('select'));
 
 // // Voeg event listener toe voor elk select-element
@@ -181,5 +181,52 @@ function filterAnimals(filter) {
 
 
 
+  
+// // Selecteer alle filterthema's (Animals, Season, Language, Sorting)
+// const filterSelect = document.querySelectorAll('select'); // Dit selecteert alle <select>-elementen in de DOM
 
+// filterSelect.forEach(function(filter) {
+//     filter.addEventListener('change', function() { // Wanneer de gebruiker een keuze maakt, wordt de filterfunctie uitgevoerd
+//         filterAnimals(); // Roep de filterfunctie aan
+//     });
+// });
+
+// // Filter functie
+// function filterAnimals() {
+//     const animals = document.querySelectorAll('.story-card'); // Selecteer alle story-cards (sections)
+//     let visibleCount = 0; // Teller voor het aantal zichtbare items
+
+//     // Verzamel de geselecteerde filterwaarden (uit de geselecteerde options)
+//     const selectedFilters = Array.from(filterSelect).map(function(select) {
+//         return select.value; // Verkrijg de waarde van elk geselecteerd filter
+//     }).filter(function(value) {
+//         return value !== '*'; // Verwijder de '*' waarde (dat betekent geen filter)
+//     });
+
+//     // Loop door alle story-cards (sections)
+//     animals.forEach(animal => {
+//         let matches = true;
+
+//         // Controleer of de story-card voldoet aan alle geselecteerde filters
+//         selectedFilters.forEach(function(filter) {
+//             if (!animal.classList.contains(filter)) {
+//                 matches = false; // Als de story-card niet voldoet aan dit filter, markeer als niet overeenkomend
+//             }
+//         });
+
+//         // Als de story-card voldoet aan alle filters, laat het dan zien
+//         if (matches) {
+//             animal.classList.remove('hidden'); // Verwijder de 'hidden' class om de story-card zichtbaar te maken
+//             visibleCount++; // Verhoog de teller voor zichtbare items
+//         } else {
+//             animal.classList.add('hidden'); // Voeg de 'hidden' class toe om de story-card te verbergen
+//         }
+//     });
+
+//     // Toon het aantal zichtbare items in het 'filter-result' element
+//     const resultText = document.getElementById('filter-result');
+//     if (resultText) {
+//         resultText.textContent = `${visibleCount} stories gevonden`; // Toon het aantal zichtbare story-cards
+//     }
+// }
 
