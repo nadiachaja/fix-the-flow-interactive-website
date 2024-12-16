@@ -100,36 +100,36 @@ gebruiker.addEventListener('mouseleave', () => {
 
 
 // // select button dat je kan filteren naar een story
-// const filterSelect = document.querySelectorAll('select'); //dit selecteer het alle selects in de DOM
+const filterSelect = document.querySelectorAll('select'); //dit selecteer het alle selects in de DOM
 
-// filterSelect.forEach(function changeCards(filter) { //kijkt door alle select heen 
-//     filter.addEventListener('change', function(element) { //select element luister naar veranderingen en voor de fuctie uit
-//         filterAnimals(element.target.value); //worden de waarde van de geselecteerde select opgehaald 
-//     });
-// });
-
-
-// function filterAnimals(filter) {
-//     const animals = document.querySelectorAll('.story-card'); // Selecteer alle stories
-//     let visibleCount = 0; // Teller voor het aantal zichtbare items
+filterSelect.forEach(function changeCards(filter) { //kijkt door alle select heen 
+    filter.addEventListener('change', function(element) { //select element luister naar veranderingen en voor de fuctie uit
+        filterAnimals(element.target.value); //worden de waarde van de geselecteerde select opgehaald 
+    });
+});
 
 
-//     animals.forEach(animal => { // Loopt door alle story-cards heen
-//         if (filter === '*' || animal.classList.contains(filter)) { //als de filter hetzelfde is als * voert die geen filter uit en laat die alle stories zien. Als er wel een story is met class die geselecteert is laat die alleen de geselcteerde zien
-//             animal.classList.remove('hidden'); //zoja, dan verwijdert die de hidden class om zo de geselecteerde stories te laten zien
-//             visibleCount++; // Verhoog de teller als het item zichtbaar is
-//         } else {
-//             animal.classList.add('hidden'); // zo niet, dat blijft de hidden erop en laat de niet geselecteerde stories niet zien
-//         }
-//     });
+function filterAnimals(filter) {
+    const animals = document.querySelectorAll('.story-card'); // Selecteer alle stories
+    let visibleCount = 0; // Teller voor het aantal zichtbare items
 
-//     // Toon het aantal gefilterde items
-//     const resultText = document.getElementById('filter-result'); // dit selecteert de filter-select 
-//     if (resultText) {
-//         resultText.textContent = `${visibleCount} stories gevonden`; // Toon het aantal zichtbaar items
+
+    animals.forEach(animal => { // Loopt door alle story-cards heen
+        if (filter === '*' || animal.classList.contains(filter)) { //als de filter hetzelfde is als * voert die geen filter uit en laat die alle stories zien. Als er wel een story is met class die geselecteert is laat die alleen de geselcteerde zien
+            animal.classList.remove('hidden'); //zoja, dan verwijdert die de hidden class om zo de geselecteerde stories te laten zien
+            visibleCount++; // Verhoog de teller als het item zichtbaar is
+        } else {
+            animal.classList.add('hidden'); // zo niet, dat blijft de hidden erop en laat de niet geselecteerde stories niet zien
+        }
+    });
+
+    // Toon het aantal gefilterde items
+    const resultText = document.getElementById('filter-result'); // dit selecteert de filter-select 
+    if (resultText) {
+        resultText.textContent = `${visibleCount} stories gevonden`; // Toon het aantal zichtbaar items
     
-//     }
-// }
+    }
+}
 
 
 
