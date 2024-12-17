@@ -36,9 +36,14 @@ Zo kan je filteren naar de story die je wilt luisteren. Met de filter interactie
 Ik heb de all stories pagina responsive gemaakt zodat je op je telefoon, tablet en laptop de stories kan luisteren. <br>
 Wat ik verandert heb is dat per beeldscherm de stories in 1, 2 of 3 rijen staan. 
 
-<img width="540" alt="laptop" src="https://github.com/user-attachments/assets/288ab528-7214-491c-a5cc-be2eec159508" /> <img width="229" alt="tablet" src="https://github.com/user-attachments/assets/8839b32d-5421-4fbf-9619-f4723cbefa58" /> <img width="136" alt="telefoon" src="https://github.com/user-attachments/assets/dc687a69-d8b6-460d-844c-738d1e6e5c52" />
+**Laptop** <br>
+<img width="540" alt="laptop" src="https://github.com/user-attachments/assets/288ab528-7214-491c-a5cc-be2eec159508" /> <br>
 
-..........................................................**Laptop**..........................................................................**Tablet**.............................**Telefoon**.............................
+**Tablet** <br>
+<img width="229" alt="tablet" src="https://github.com/user-attachments/assets/8839b32d-5421-4fbf-9619-f4723cbefa58" /> <br>
+
+**Telefoon** <br>
+<img width="136" alt="telefoon" src="https://github.com/user-attachments/assets/dc687a69-d8b6-460d-844c-738d1e6e5c52" />
 
 
 ## Kenmerken
