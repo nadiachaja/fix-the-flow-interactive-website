@@ -24,7 +24,7 @@ Op de all stories pagina kan je een story zoeken door te filteren. Ik heb 4 sele
 Zo kan je filteren naar de story die je wilt luisteren. Met de filter interactie kan je sneller de story vinden die je zoekt. 
 
 **Filter interactie**
-<video src="https://github.com/user-attachments/assets/7dcfbfb8-006a-4e91-b2a3-76b9580472a3" controls muted autoplay playsinline></video>
+<video src="https://github.com/user-attachments/assets/ae9f7c7d-1c52-46d1-92f6-dbeec88cce6e" controls muted autoplay playsinline></video>
 
 
 ### Responsive 
