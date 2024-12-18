@@ -104,7 +104,7 @@ gebruiker.addEventListener('mouseleave', () => {
 
 // // select button dat je kan filteren naar een story
 const filterSelects = document.querySelectorAll('select'); //dit selecteer het alle selects in de DOM
-const formEl = document.querySelector('.keuze-selecteren') //selecteert een formulier  met de class keuze-selecteren
+const formEl = document.querySelector('.keuze-selecteren') 
 
 
 filterSelects.forEach(function (filter) { //kijkt door alle select heen 
