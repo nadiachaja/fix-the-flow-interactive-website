@@ -23,13 +23,9 @@ De filter interactie. <br>
 Op de all stories pagina kan je een story zoeken door te filteren. Ik heb 4 selects gemaakt met daarin de filter opties die je kan kiezen. Ik heb daarbij ook stories gemaakt met elke keer met wat anders bijvoorbeeld een story met een pinguïn in het Spaans met het seizoen winter en de story duurt minder dan 5 minuten. <br>
 Zo kan je filteren naar de story die je wilt luisteren. Met de filter interactie kan je sneller de story vinden die je zoekt. 
 
-**Filter Penguin** <br>
-<img width="540" alt="filter pinguin" src="https://github.com/user-attachments/assets/b25d8719-2f27-4ef4-8061-c262cdbc75fb" />
-<br>
-<br>
-**Filter Dutch** <br>
-<img width="540" alt="filter Nederlands" src="https://github.com/user-attachments/assets/109cf843-cd56-4f9a-ba6c-abaa2efcf091" />
-<br>
+**Filter interactie**
+<video src="https://github.com/user-attachments/assets/7dcfbfb8-006a-4e91-b2a3-76b9580472a3" controls muted autoplay playsinline></video>
+
 
 ### Responsive 
 
