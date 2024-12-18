@@ -60,11 +60,14 @@ Wat ik verandert heb is dat per beeldscherm de stories in 1, 2 of 3 rijen staan.
 <br>
 **Belangrijke dingen in CSS** 
 - Om de story kaartje te maken heb ik grid gebruikt. Ik heb grid-template-columns en grid-template-rows gebruikt ik heb toen met procenten gewerkt zodat de kaartje de goede grote hadden.
-- Ik heb bij de zoekbalk een vergrootglas erin gezet en die op de goede plek neergezet en dat je ernaast kan typen.  
-<br>
-<br>
-De JS
-        - 
+- Ik heb bij de zoekbalk een vergrootglas erin gezet en die op de goede plek neergezet en dat je ernaast kan typen.
+
+**Interactie JS**
+- Ik heb met JavaScript de filter interactie gemaakt. Ik heb dat gedaan door alle selects en story-cards te selecteren. Daarbij heb ik ook dat je ziet hoeveel stories er zijn gevonden. Om alles selects te laten werken heb ik array gebruiken door push te gebruiken.
+- https://github.com/nadiachaja/fix-the-flow-interactive-website/blob/b0a933b9beb881b5aa66db5a081c2dd2a478526e/lessons/lessons.js#L124-L127
+- Als je een story zoekt met de opties dan blijven de geselecteerde stories staan en de stories die de filter niet hebben verdwijnen dan.
+- https://github.com/nadiachaja/fix-the-flow-interactive-website/blob/b0a933b9beb881b5aa66db5a081c2dd2a478526e/lessons/lessons.js#L144-L151 
+
 
 ## Licentie
 
