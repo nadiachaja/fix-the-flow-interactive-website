@@ -104,53 +104,53 @@ gebruiker.addEventListener('mouseleave', () => {
 
 // // select button dat je kan filteren naar een story
 const filterSelects = document.querySelectorAll('select'); //dit selecteer het alle selects in de DOM
-const formEl = document.querySelector('.keuze-selecteren') 
+const formEl = document.querySelector('.keuze-selecteren') //selecteert het formulier met de class keuze-selcteren
 
 
 filterSelects.forEach(function (filter) { //kijkt door alle select heen 
     filter.addEventListener('change', function(event) { //select element luister naar veranderingen en voor de fuctie uit
-        const formData = new FormData(formEl);
+        const formData = new FormData(formEl); // Haal de data van het formulier op
 
-            setAllFilters(formData)    
+            setAllFilters(formData)  // Roep de functie aan om de filters te verwerken  
 
     });
 });
 
-let activeFilters = []
+let activeFilters = [] // Lege array voor de actieve filters
 
 function setAllFilters(formData) {
     activeFilters = []
 
-    activeFilters.push(formData.get('animals'))
-    activeFilters.push(formData.get('season'))
-    activeFilters.push(formData.get('language'))
-    activeFilters.push(formData.get('sorting'))
+    activeFilters.push(formData.get('animals')) // Voeg de geselecteerde waarde van 'animals' toe aan de actieve filters
+    activeFilters.push(formData.get('season')) // Voeg de geselecteerde waarde van 'season' toe aan de actieve filters
+    activeFilters.push(formData.get('language')) // Voeg de geselecteerde waarde van 'language' toe aan de actieve filters
+    activeFilters.push(formData.get('sorting')) // Voeg de geselecteerde waarde van 'sorting' toe aan de actieve filters
 
-    filterCards()
+    filterCards() // Roep de functie aan om de kaarten (stories) te filteren
 }
 
 
 function filterCards() {
-    console.log(activeFilters)
     let visibleCount = 0; // Teller voor het aantal zichtbare items
-    let activeFilterClassString = '';
+    let activeFilterClassString = ''; // String voor de actieve filterklassen
     
-    activeFilters.forEach(filter => {
+    activeFilters.forEach(filter => { 
         if (filter) {
-            activeFilterClassString += '.'+filter
+            activeFilterClassString += '.'+filter  // Voeg de filterklasse toe aan de string
         }
     });
     
     
-    const allCards = document.querySelectorAll('.story-card'); // Selecteer alle stories
+    const allCards = document.querySelectorAll('.story-card'); // Selecteert alle stories
     allCards.forEach(function (card) {
-        card.classList.add('hidden')
-    })
+        card.classList.add('hidden')  // Voeg de klasse 'hidden' toe aan elke kaart om deze te verbergen
+    }) 
+
     const activeCards = document.querySelectorAll('.story-card'+activeFilterClassString); // Selecteer alle stories
     activeCards.forEach(function (activeCard) {
-        activeCard.classList.remove('hidden')
+        activeCard.classList.remove('hidden') // Verwijder de 'hidden' klasse van de zichtbare kaarten
     })
-    visibleCount = activeCards.length
+    visibleCount = activeCards.length // Het aantal zichtbare kaarten wordt bijgewerkt
 
 
     // Toon het aantal gefilterde items
