@@ -99,37 +99,64 @@ gebruiker.addEventListener('mouseleave', () => {
 
 
 
+
+
+
 // // select button dat je kan filteren naar een story
 const filterSelects = document.querySelectorAll('select'); //dit selecteer het alle selects in de DOM
+const formEl = document.querySelector('.keuze-selecteren')
 
-filterSelects.forEach(function changeCards(filter) { //kijkt door alle select heen 
+
+filterSelects.forEach(function (filter) { //kijkt door alle select heen 
     filter.addEventListener('change', function(event) { //select element luister naar veranderingen en voor de fuctie uit
-        // haal van elke selectbox in filterSelects de geselecteerde waarde op
-        // en geef deze waarde door aan filterCards
-        filterCards(event.target.value); //worden de waarde van de geselecteerde select opgehaald 
+        const formData = new FormData(formEl);
+
+            setAllFilters(formData)    
+
     });
 });
 
+let activeFilters = []
 
-function filterCards(filter) {
-    const cards = document.querySelectorAll('.story-card'); // Selecteer alle stories
+function setAllFilters(formData) {
+    activeFilters = []
+
+    activeFilters.push(formData.get('animals'))
+    activeFilters.push(formData.get('season'))
+    activeFilters.push(formData.get('language'))
+    activeFilters.push(formData.get('sorting'))
+
+    filterCards()
+}
+
+
+function filterCards() {
+    console.log(activeFilters)
     let visibleCount = 0; // Teller voor het aantal zichtbare items
-
-
-    cards.forEach(card => { // Loopt door alle story-cards heen
-        if (filter === '*' || card.classList.contains(filter)) { //als de filter hetzelfde is als * voert die geen filter uit en laat die alle stories zien. Als er wel een story is met class die geselecteert is laat die alleen de geselcteerde zien
-            card.classList.remove('hidden'); //zoja, dan verwijdert die de hidden class om zo de geselecteerde stories te laten zien
-            visibleCount++; // Verhoog de teller als het item zichtbaar is
-        } else {
-            card.classList.add('hidden'); // zo niet, dat blijft de hidden erop en laat de niet geselecteerde stories niet zien
+    let activeFilterClassString = '';
+    
+    activeFilters.forEach(filter => {
+        if (filter) {
+            activeFilterClassString += '.'+filter
         }
     });
+    
+    
+    const allCards = document.querySelectorAll('.story-card'); // Selecteer alle stories
+    allCards.forEach(function (card) {
+        card.classList.add('hidden')
+    })
+    const activeCards = document.querySelectorAll('.story-card'+activeFilterClassString); // Selecteer alle stories
+    activeCards.forEach(function (activeCard) {
+        activeCard.classList.remove('hidden')
+    })
+    visibleCount = activeCards.length
+
 
     // Toon het aantal gefilterde items
     const resultText = document.getElementById('filter-result'); // dit selecteert de filter-select 
     if (resultText) {
         resultText.textContent = `${visibleCount} stories gevonden`; // Toon het aantal zichtbaar items
-    
     }
 }
 

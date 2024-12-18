@@ -136,9 +136,9 @@
 
         <p class="filter-uitleg">Hieronder kan je filteren door de stories om zo jouw story te zoeken die jij wilt luisteren</p>
 
-        <div class="keuze-selecteren">
-            <select name="Animals" id="animals">
-                <option class="filter-option" value="*">Animals</option>
+        <form class="keuze-selecteren">
+            <select name="animals" id="animals">
+                <option class="filter-option" value="">Animals</option>
                 <option class="filter-option" value="Mouse">Mouse</option>
                 <option class="filter-option" value="Pinguin">Penguin</option>
                 <option class="filter-option" value="Turtle">Turtle</option>
@@ -150,16 +150,16 @@
                 <option class="filter-option" value="Ghost">Ghost</option>
             </select>
 
-            <select name="Season" id="season">
-                <option class="filter-option" value="*">Season</option>
+            <select name="season" id="season">
+                <option class="filter-option" value="">Season</option>
                 <option class="filter-option" value="Autumn">Autumn</option>
                 <option class="filter-option" value="Winter">Winter</option>
                 <option class="filter-option" value="Spring">Spring</option>
                 <option class="filter-option" value="Summer">Summer</option>
             </select>
 
-            <select name="Language" id="language">
-                <option class="filter-option" value="*">Language</option>
+            <select name="language" id="language">
+                <option class="filter-option" value="">Language</option>
                 <option class="filter-option" value="English">English</option>
                 <option class="filter-option" value="France">France</option>
                 <option class="filter-option" value="German">German</option>
@@ -167,14 +167,14 @@
                 <option class="filter-option" value="Spanish">Spanish</option>
             </select>
 
-            <select name="Sorting" id="Sorting">
-                <option class="filter-option" value="*">Sorting</option>
+            <select name="sorting" id="sorting">
+                <option class="filter-option" value="">Sorting</option>
                 <option class="filter-option" value="New">New</option>
                 <option class="filter-option" value="Old">Old</option>
-                <option class="filter-option" value="3-5">3-5 Minutes</option>
-                <option class="filter-option" value="5-10">5-10 Minutes</option>
+                <option class="filter-option" value="time-3-5">3-5 Minutes</option>
+                <option class="filter-option" value="time-5-10">5-10 Minutes</option>
             </select>
-        </div>
+        </form>
 
 
         <h2>Stories</h2>
@@ -182,7 +182,7 @@
         <div id="filter-result">35 stories gevonden</div>
 
         <div class="all-stories">
-            <section class="story-card Dino Winter English 3-5 Old">
+            <section class="story-card Dino Winter English time-3-5 Old">
                 <h3>The dinosaur family</h3>
 
                 <p class="story-uitleg">Long ago there was a family of dinosaurs that lived in a deserted place. The
@@ -215,7 +215,7 @@
                 </svg>
             </section>
 
-            <section class="story-card Pinguin Winter German 3-5 New ">
+            <section class="story-card Pinguin Winter German time-3-5 New ">
                 <h3>A day at the south pole</h3>
 
                 <p class="story-uitleg">Follow a group of penguins as they enjoy their day on the southern end of the
@@ -249,7 +249,7 @@
             </section>
 
 
-            <section class="story-card Pig Cow Summer English 5-10 New">
+            <section class="story-card Pig Cow Summer English time-5-10 New">
                 <h3>Pig and cow enjoy their day</h3>
 
                 <p class="story-uitleg">Pig and cow have been friends for a long time. They are spending another day
@@ -283,7 +283,7 @@
             </section>
 
 
-            <section class="story-card Pinguin Autumn German 3-5 Old">
+            <section class="story-card Pinguin Autumn German time-3-5 Old">
                 <h3>Six o’clock</h3>
 
                 <p class="story-uitleg">A group of friends try to take over the playground. Jesper and Wylan want to
@@ -317,7 +317,7 @@
             </section>
 
 
-            <section class="story-card Ghost Autumn France 5-10 New">
+            <section class="story-card Ghost Autumn France time-5-10 New">
                 <h3>You can’t have my blueberries</h3>
 
                 <p class="story-uitleg">This is a story about a little man, who really loves blueberries and he doesn’t
@@ -351,7 +351,7 @@
             </section>
 
 
-            <section class="story-card Pig Spring Dutch 5-10 Old">
+            <section class="story-card Pig Spring Dutch time-5-10 Old">
                 <h3>Mama and baby pig</h3>
 
                 <p class="story-uitleg">Mama pig and baby pig have a day together. They go walk around the farm and say
@@ -385,7 +385,7 @@
             </section>
 
 
-            <section class="story-card Octopus Pig Summer France 5-10 Old">
+            <section class="story-card Octopus Pig Summer France time-5-10 Old">
                 <h3>Fred and Ted go to a party</h3>
 
                 <p class="story-uitleg">Fred and Ted have been invited to a fancy Christmas party</p>
@@ -418,7 +418,7 @@
             </section>
 
 
-            <section class="story-card Pinguin Autumn Spanish 3-5 Old">
+            <section class="story-card Pinguin Autumn Spanish time-3-5 Old">
                 <h3>Six o’clock</h3>
 
                 <p class="story-uitleg">A group of friends try to take over the playground. Jesper and Wylan want to
@@ -452,7 +452,7 @@
             </section>
 
 
-            <section class="story-card Pig Spring German 5-10 Old">
+            <section class="story-card Pig Spring German time-5-10 Old">
                 <h3>Mama and baby pig</h3>
 
                 <p class="story-uitleg">Mama pig and baby pig have a day together. They go walk around the farm and say
@@ -486,7 +486,7 @@
             </section>
 
 
-            <section class="story-card Pinguin Winter Spanish 3-5 New ">
+            <section class="story-card Pinguin Winter Spanish time-3-5 New ">
                 <h3>A day at the south pole</h3>
 
                 <p class="story-uitleg">Follow a group of penguins as they enjoy their day on the southern end of the
@@ -520,7 +520,7 @@
             </section>
 
 
-            <section class="story-card Dino Winter France 3-5 Old">
+            <section class="story-card Dino Winter France time-3-5 Old">
                 <h3>The dinosaur family</h3>
 
                 <p class="story-uitleg">Long ago there was a family of dinosaurs that lived in a deserted place. The
@@ -554,7 +554,7 @@
             </section>
 
 
-            <section class="story-card Ghost Autumn Dutch 5-10 New">
+            <section class="story-card Ghost Autumn Dutch time-5-10 New">
                 <h3>You can’t have my blueberries</h3>
 
                 <p class="story-uitleg">This is a story about a little man, who really loves blueberries and he doesn’t
@@ -588,7 +588,7 @@
             </section>
 
 
-            <section class="story-card Octopus Pig Summer Dutch 5-10 Old">
+            <section class="story-card Octopus Pig Summer Dutch time-5-10 Old">
                 <h3>Fred and Ted go to a party</h3>
 
                 <p class="story-uitleg">Fred and Ted have been invited to a fancy Christmas party</p>
@@ -621,7 +621,7 @@
             </section>
 
 
-            <section class="story-card Pig Cow Summer Spanish 5-10 New">
+            <section class="story-card Pig Cow Summer Spanish time-5-10 New">
                 <h3>Pig and cow enjoy their day</h3>
 
                 <p class="story-uitleg">Pig and cow have been friends for a long time. They are spending another day
@@ -655,7 +655,7 @@
             </section>
 
 
-            <section class="story-card Dino Winter German 3-5 Old">
+            <section class="story-card Dino Winter German time-3-5 Old">
                 <h3>The dinosaur family</h3>
 
                 <p class="story-uitleg">Long ago there was a family of dinosaurs that lived in a deserted place. The
@@ -689,7 +689,7 @@
             </section>
 
 
-            <section class="story-card Ghost Autumn English 5-10 New">
+            <section class="story-card Ghost Autumn English time-5-10 New">
                 <h3>You can’t have my blueberries</h3>
     
                 <p class="story-uitleg">This is a story about a little man, who really loves blueberries and he doesn’t
@@ -723,7 +723,7 @@
             </section>
 
 
-            <section class="story-card Pinguin Winter France 3-5 New ">
+            <section class="story-card Pinguin Winter France time-3-5 New ">
                 <h3>A day at the south pole</h3>
 
                 <p class="story-uitleg">Follow a group of penguins as they enjoy their day on the southern end of the
@@ -757,7 +757,7 @@
             </section>
 
 
-            <section class="story-card Dino Winter Spanish 3-5 Old">
+            <section class="story-card Dino Winter Spanish time-3-5 Old">
                 <h3>The dinosaur family</h3>
 
                 <p class="story-uitleg">Long ago there was a family of dinosaurs that lived in a deserted place. The
@@ -791,7 +791,7 @@
             </section>
 
 
-            <section class="story-card Pig Spring English 5-10 Old">
+            <section class="story-card Pig Spring English time-5-10 Old">
                 <h3>Mama and baby pig</h3>
 
                 <p class="story-uitleg">Mama pig and baby pig have a day together. They go walk around the farm and say
@@ -825,7 +825,7 @@
             </section>
 
 
-            <section class="story-card Pinguin Autumn Dutch 3-5 Old">
+            <section class="story-card Pinguin Autumn Dutch time-3-5 Old">
                 <h3>Six o’clock</h3>
 
                 <p class="story-uitleg">A group of friends try to take over the playground. Jesper and Wylan want to
@@ -859,7 +859,7 @@
             </section>
 
 
-            <section class="story-card Octopus Pig Summer German 5-10 Old">
+            <section class="story-card Octopus Pig Summer German time-5-10 Old">
                 <h3>Fred and Ted go to a party</h3>
 
                 <p class="story-uitleg">Fred and Ted have been invited to a fancy Christmas party</p>
@@ -892,7 +892,7 @@
             </section>
 
 
-            <section class="story-card Ghost Autumn Spanish 5-10 New">
+            <section class="story-card Ghost Autumn Spanish time-5-10 New">
                 <h3>You can’t have my blueberries</h3>
     
                 <p class="story-uitleg">This is a story about a little man, who really loves blueberries and he doesn’t
@@ -926,7 +926,7 @@
             </section>
 
 
-            <section class="story-card Pig Spring Spanish 5-10 Old">
+            <section class="story-card Pig Spring Spanish time-5-10 Old">
                 <h3>Mama and baby pig</h3>
 
                 <p class="story-uitleg">Mama pig and baby pig have a day together. They go walk around the farm and say
@@ -960,7 +960,7 @@
             </section>
 
 
-            <section class="story-card Dino Winter Dutch 3-5 Old">
+            <section class="story-card Dino Winter Dutch time-3-5 Old">
                 <h3>The dinosaur family</h3>
 
                 <p class="story-uitleg">Long ago there was a family of dinosaurs that lived in a deserted place. The
@@ -994,7 +994,7 @@
             </section>
 
 
-            <section class="story-card Octopus Pig Summer English 5-10 Old">
+            <section class="story-card Octopus Pig Summer English time-5-10 Old">
                 <h3>Fred and Ted go to a party</h3>
 
                 <p class="story-uitleg">Fred and Ted have been invited to a fancy Christmas party</p>
@@ -1027,7 +1027,7 @@
             </section>
 
 
-            <section class="story-card Pinguin Autumn France 3-5 Old">
+            <section class="story-card Pinguin Autumn France time-3-5 Old">
                 <h3>Six o’clock</h3>
 
                 <p class="story-uitleg">A group of friends try to take over the playground. Jesper and Wylan want to
@@ -1061,7 +1061,7 @@
             </section>
 
 
-            <section class="story-card Pinguin Winter English 3-5 New ">
+            <section class="story-card Pinguin Winter English time-3-5 New ">
                 <h3>A day at the south pole</h3>
 
                 <p class="story-uitleg">Follow a group of penguins as they enjoy their day on the southern end of the
@@ -1095,7 +1095,7 @@
             </section>
 
 
-            <section class="story-card Pig Cow Summer Dutch 5-10 New">
+            <section class="story-card Pig Cow Summer Dutch time-5-10 New">
                 <h3>Pig and cow enjoy their day</h3>
 
                 <p class="story-uitleg">Pig and cow have been friends for a long time. They are spending another day
@@ -1129,7 +1129,7 @@
             </section>
 
 
-            <section class="story-card Ghost Autumn German 5-10 New">
+            <section class="story-card Ghost Autumn German time-5-10 New">
                 <h3>You can’t have my blueberries</h3>
     
                 <p class="story-uitleg">This is a story about a little man, who really loves blueberries and he doesn’t
@@ -1163,7 +1163,7 @@
             </section>
 
 
-            <section class="story-card Pig Cow Summer France 5-10 New">
+            <section class="story-card Pig Cow Summer France time-5-10 New">
                 <h3>Pig and cow enjoy their day</h3>
 
                 <p class="story-uitleg">Pig and cow have been friends for a long time. They are spending another day
@@ -1197,7 +1197,7 @@
             </section>
 
 
-            <section class="story-card Octopus Pig Summer Spanish 5-10 Old">
+            <section class="story-card Octopus Pig Summer Spanish time-5-10 Old">
                 <h3>Fred and Ted go to a party</h3>
 
                 <p class="story-uitleg">Fred and Ted have been invited to a fancy Christmas party</p>
@@ -1230,7 +1230,7 @@
             </section>
 
 
-            <section class="story-card Pinguin Winter Dutch 3-5 New ">
+            <section class="story-card Pinguin Winter Dutch time-3-5 New ">
                 <h3>A day at the south pole</h3>
 
                 <p class="story-uitleg">Follow a group of penguins as they enjoy their day on the southern end of the
@@ -1264,7 +1264,7 @@
             </section>
 
 
-            <section class="story-card Pinguin Autumn English 3-5 Old">
+            <section class="story-card Pinguin Autumn English time-3-5 Old">
                 <h3>Six o’clock</h3>
 
                 <p class="story-uitleg">A group of friends try to take over the playground. Jesper and Wylan want to
@@ -1298,7 +1298,7 @@
             </section>
 
 
-            <section class="story-card Pig Spring France 5-10 Old">
+            <section class="story-card Pig Spring France time-5-10 Old">
                 <h3>Mama and baby pig</h3>
 
                 <p class="story-uitleg">Mama pig and baby pig have a day together. They go walk around the farm and say
@@ -1332,7 +1332,7 @@
             </section>
 
 
-            <section class="story-card Pig Cow Summer German 5-10 New">
+            <section class="story-card Pig Cow Summer German time-5-10 New">
                 <h3>Pig and cow enjoy their day</h3>
 
                 <p class="story-uitleg">Pig and cow have been friends for a long time. They are spending another day
